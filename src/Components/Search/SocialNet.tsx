@@ -1,4 +1,5 @@
 import React from 'react'
+import { mobile } from '../../App'
 
 
 export const SocialNet:any = (props:any) => {
@@ -7,7 +8,10 @@ export const SocialNet:any = (props:any) => {
 
     return (
     <>
-        <div style={{width:'300px', display:'block', marginLeft:'auto', paddingRight:'32px'}}>
+        <div style={{
+            width:'300px', display:'block', margin: mobile ? 'auto' : '0 0 0 auto',
+            paddingRight: mobile ? 'auto' : '32px'
+            }}>
 
             <div className="btn-group btn-group-toggle fontsforweb_fontid_77695" data-toggle="buttons"
                 style={{fontSize:'1.2rem', margin:'auto', display:'flex', alignItems:'center'}}

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
+import { mobile } from '../../App'
 
 
 export const Input = (props:any) => {
@@ -16,10 +17,10 @@ export const Input = (props:any) => {
     <>
         <Row style={{marginBottom:'40px'}}>
 
-            <Col lg={6}>
-                <div className="form-group">
-                    <input className="form-control" type="text"
-                        style={{maxWidth:'300px', margin:'0 0 0 auto'}} placeholder="Palabras"
+            <Col lg={6} style={{margin: mobile ? '0 auto 20px auto' : 'auto'}}>
+                <div className="form-group" style={{maxWidth:'100%', margin:'auto'}}>
+                    <input className="form-control" type="text" placeholder="Palabras"
+                        style={{maxWidth:'300px', margin: mobile ? 'auto' : '0 0 0 auto'}}
                         onChange={(e:any) => setWords(e.target.value)}
                     />
                 </div>
@@ -27,15 +28,16 @@ export const Input = (props:any) => {
 
             <Col lg={6}>
 
-                <button className="btn btn-success fontsforweb_fontid_77695" id="btnSearch"
+                <Button className="btn btn-success fontsforweb_fontid_77695" id="btnSearch"
                     style={{
-                        backgroundColor:'red', borderColor:'red', color:'white',
-                        fontSize:'1.6rem', borderRadius:'8px', width:'400px'
+                        backgroundColor:'red', borderColor:'red', color:'white', fontSize:'1.6rem',
+                        width:'300px', borderRadius:'8px', display:'block',
+                        margin: mobile ? 'auto' : '0 auto 0 0'
                     }}
                     onClick={()=>props.enviar()}
                 >
                     buscar
-                </button>
+                </Button>
 
             </Col>
 

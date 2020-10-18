@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Button } from 'react-bootstrap'
+import { mobile} from '../../App'
 
 
 export const Months:any = (props:any) => {
@@ -15,17 +17,21 @@ export const Months:any = (props:any) => {
 
     return (
     <>
-        <button className="btn btn-primary fontsforweb_fontid_77695" type="button"
-            style={{
-                fontSize:'1rem', borderColor:'black', backgroundColor:'#3b5998', width:'200px'
-            }}
-            onClick={()=>setShowMonths(!showMonths)}
-        >
-            filtrar meses
-        </button>
+        <div style={{display:'block'}}>
+            <Button className="btn btn-primary fontsforweb_fontid_77695" type="button"
+                style={{
+                    fontSize:'1rem', borderColor:'black', backgroundColor:'#3b5998', width:'200px',
+                    display:'block', margin: mobile ? '10px auto 0 auto' : '10px 0 0 0'
+                }}
+                onClick={()=>setShowMonths(!showMonths)}
+            >
+                filtrar meses
+            </Button>
+        </div>
         
         <div className="card-header" style={{
-            maxWidth:'350px', paddingBottom:'0', display: showMonths ? 'block' : 'none'}}>
+            maxWidth:'350px', paddingBottom:'0', display: showMonths ? 'block' : 'none',
+            margin: mobile ? 'auto' : '0'}}>
         
             <div className="row" style={{marginLeft:'20px', paddingRight:'0'}}>
 

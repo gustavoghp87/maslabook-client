@@ -1,4 +1,5 @@
 import React from 'react'
+import { mobile } from '../../App'
 
 
 export const Date:any = (props:any) => {
@@ -14,7 +15,9 @@ export const Date:any = (props:any) => {
 
     return (
     <>
-        <div className="card-header" style={{maxWidth:'350px', paddingBottom:'0', marginBottom:'20px'}}>
+        <div className="card-header" style={{
+            maxWidth:'350px', paddingBottom:'0', marginBottom:'20px', margin: mobile ? 'auto' : '0'
+            }}>
 
             <div className="row" style={{marginLeft:'20px'}}>
                 

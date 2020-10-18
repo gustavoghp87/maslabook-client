@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Axios from 'axios'
 import { SERVER } from '../Config'
+import { mobile } from '../App'
 
 
 export const Maslastory = () => {
@@ -11,10 +12,11 @@ export const Maslastory = () => {
 
   return (
   <>
-      <div className="container maslastory" style={{maxWidth: '80%'}}>
+      <div className="container maslastory" style={{maxWidth: mobile ? '100%' : '80%'}}>
       <div className="col-sm-12" style={{marginBottom: '40px'}}>
         <div className="row">
-          <h1 className="fontsforweb_fontid_77695 historia" style={{textAlign: 'center', paddingBottom: '30px', fontSize: '3rem'}}>
+          <h1 className="fontsforweb_fontid_77695 historia"
+            style={{textAlign:'center', paddingBottom:'30px', fontSize: mobile ? '2.2rem' : '3rem'}}>
             Maslatón fue protagonista de algunos de los eventos más importantes de la historia humana
           </h1>
         </div>

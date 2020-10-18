@@ -4,6 +4,7 @@ import Axios from 'axios'
 import { SERVER } from '../Config'
 import { timer } from '../Timer'
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { mobile } from '../App'
 
 
 export const Maslaboard = () => {
@@ -46,25 +47,24 @@ export const Maslaboard = () => {
 
   return (
   <>
-      <div className="container maslaboard" style={{maxWidth:'80%'}}>
+      <div className="container maslaboard" style={{maxWidth: mobile ? '100%' : '80%'}}>
 
         <div className="col-sm-12">
 
-          <hr style={{marginBottom: '35px', width: '100%', border: '1px solid #3b5998', borderRadius: '5px'}} />
-
-          <h1 className="fontsforweb_fontid_77695" style={{textAlign:'center', paddingBottom:'20px'}}>
-          </h1>
-
-          <div className="cualquiera" style={{paddingBottom:'3.5rem'}}>
-              <button type="button" className="btn btn-lg fontsforweb_fontid_77695"
+          <div className="cualquiera" style={{paddingBottom: mobile ? '30px' : '100px'}}>
+              <Button type="button" className="btn btn-lg fontsforweb_fontid_77695"
                   style={{backgroundColor:'red', color:'white', display:'block', margin:'auto',
-                      fontSize:'1.8rem', borderRadius:'8px'}}
+                      fontSize: mobile ? '1.6rem' : '1.8rem', borderRadius:'8px'}}
                   onClick={()=>handleShow()}
               >
                   escribir un mensaje
-              </button>
+              </Button>
           </div>
         </div>
+
+        <hr style={{
+          marginBottom:'55px', width: '100%', border: '1px solid #3b5998', borderRadius: '5px'
+        }} />
 
 
         {boards && boards.boards && !!boards.boards &&
@@ -72,7 +72,7 @@ export const Maslaboard = () => {
 
         <div key={board.timeBoard} className="container" style={{paddingBottom: '50px'}}>
           <div className="row">
-            <div className="col-sm-12" style={{display: 'block', margin: 'auto'}}>
+            <div className="col-sm-12" style={{display:'block', margin:'auto', padding:'0'}}>
 
               <div className="card-header">
 
@@ -87,12 +87,12 @@ export const Maslaboard = () => {
                   </div>
                   
                   <div className="col-md-6">
-                    <span style={{fontSize:'1rem', color:'gray', float:'right'}}>
+                    <span style={{fontSize:'1rem', color:'gray', float:'right',
+                      marginBottom: mobile ? '12px' : '0'}}>
 
-                      {timer(board.timeBoard)}
+                      |&nbsp; {timer(board.timeBoard)}
 
                     </span>
-                    <span style={{fontSize:'1rem', color:'gray', float:'right'}}> |&nbsp; </span>
                   </div>
                 </div>
                 
