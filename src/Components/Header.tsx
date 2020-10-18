@@ -6,7 +6,7 @@ export const Header = () => {
 
     return (
     <>
-        <div className="fontsforweb_fontid_77695" style={{paddingTop:'15px'}}>
+        <div className="fontsforweb_fontid_77695" style={{paddingTop:'25px'}}>
 
             <Link to="/maslabook">
                 <img src="/images/mb-logo.png" alt="logo"

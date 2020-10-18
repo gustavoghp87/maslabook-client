@@ -8,6 +8,7 @@ import { Resultados } from './Search/Result'
 import { Row, Col } from 'react-bootstrap'
 import Axios from 'axios'
 import { SERVER } from '../Config'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 
 export const Maslabook = () => {
@@ -45,24 +46,26 @@ export const Maslabook = () => {
 
     const [posts, setPosts] = useState({posts:[]})
 
+    const { executeRecaptcha } = useGoogleReCaptcha()
+
     useEffect(() => {
-        Axios(`${SERVER}/api/maslabook`)
+        Axios(`${SERVER}/api/maslabook`)  
     }, [])
 
 
     const enviar = async () => {
-        console.log("Enviando:", words, socialNet, a2015, two, third)
+        if (!executeRecaptcha) return
+        const result = await executeRecaptcha("")
         const pack = {
             words,
             socialNet, third,
             a2009, a2010, a2011, a2012, a2013, a2014, a2015, a2016, a2017, a2018, a2019, a2020,
-            one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve
+            one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve,
+            result
         }
-        const axios = await Axios.post(`${SERVER}/api/search`, pack)
+        const axios = await Axios.post(`${SERVER}/api/maslabook`, pack)
         const data = await axios.data
         setPosts({posts:data.posts})
-        console.log(data);
-        
     }
 
 
@@ -121,7 +124,7 @@ export const Maslabook = () => {
 
         <Recomend />
 
-        <hr style={{marginTop:'70px', width:'100%', border:'1px solid #3b5998', borderRadius:'5px'}} />
+        <hr style={{marginTop:'70px', width:'90%', border:'1px solid #3b5998', borderRadius:'5px', textAlign:'center'}} />
 
         <Resultados posts={posts} />
     </>

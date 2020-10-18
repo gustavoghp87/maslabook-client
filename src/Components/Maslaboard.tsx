@@ -3,6 +3,7 @@ import { Modal, Button } from 'react-bootstrap'
 import Axios from 'axios'
 import { SERVER } from '../Config'
 import { timer } from '../Timer'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 
 export const Maslaboard = () => {
@@ -14,6 +15,8 @@ export const Maslaboard = () => {
 
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
+
+  const { executeRecaptcha } = useGoogleReCaptcha()
 
   useEffect(() => {
     const traer = async () => {
@@ -33,11 +36,11 @@ export const Maslaboard = () => {
     const json3 = json.country
     const json4 = json.latitude
     const json5 = json.longitude
-    const body = { name, message, json1, json2, json3, json4, json5 }
-
+    if (!executeRecaptcha) return
+    const result = await executeRecaptcha("")
+    const body = { name, message, json1, json2, json3, json4, json5, result }
     const axios = await Axios.post(`${SERVER}/api/maslaboard`, body)
     const data = await axios.data
-    
     setBoards({boards:data})
   }
 

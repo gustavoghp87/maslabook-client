@@ -7,6 +7,7 @@ import { Maslabook } from './Components/Maslabook'
 import { Maslastory } from './Components/Maslastory'
 import { Maslaboard } from './Components/Maslaboard'
 import { Maslazoom } from './Components/Maslazoom'
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import './css/App.css'
 
 
@@ -23,14 +24,21 @@ function App() {
       <NavBar />
       <Header />
       <div style={appCss}>
-        <Switch>
-          <Redirect exact path='/' to="/maslabook" />
-          <Route exact path='/maslabook' component={Maslabook} />
-          <Route exact path='/maslastory' component={Maslastory} />
-          <Route exact path='/maslaboard' component={Maslaboard} />
-          <Route exact path='/maslazoom' component={Maslazoom} />
-          <Route path='/' component={Maslabook} />
-        </Switch>
+        <GoogleReCaptchaProvider reCaptchaKey="6LeTu9gZAAAAAG9tepxJKY0gh5IjNC4rfeK8rBRK">
+          <Switch>
+            <Redirect exact path='/' to="/maslabook" />
+            
+            <Route exact path='/maslabook' component={Maslabook} />
+
+            <Route exact path='/maslastory' component={Maslastory} />
+
+            <Route exact path='/maslaboard' component={Maslaboard} />
+
+            <Route exact path='/maslazoom' component={Maslazoom} />
+            
+            <Route path='/' component={Maslabook} />
+          </Switch>
+        </GoogleReCaptchaProvider>
       </div>
       <Footer />
     </Suspense>
