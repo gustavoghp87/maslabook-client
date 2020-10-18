@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Input } from './Search/Input'
 import { SocialNet } from './Search/SocialNet'
 import { Date } from './Search/Date'
@@ -44,6 +44,10 @@ export const Maslabook = () => {
     const [twelve, setTwelve] = useState(true)
 
     const [posts, setPosts] = useState({posts:[]})
+
+    useEffect(() => {
+        Axios(`${SERVER}/api/maslabook`)
+    }, [])
 
 
     const enviar = async () => {

@@ -6,6 +6,12 @@ export const Input = (props:any) => {
 
     const { setWords } = props
 
+    if (window.location.pathname==='/maslabook') {
+        document.addEventListener('keydown', (event:any) => {
+          if (event.keyCode === 13) document.getElementById('btnSearch')!.click()
+        })
+    }
+
     return (
     <>
         <Row style={{marginBottom:'40px'}}>
@@ -21,7 +27,7 @@ export const Input = (props:any) => {
 
             <Col lg={6}>
 
-                <button className="btn btn-success fontsforweb_fontid_77695"
+                <button className="btn btn-success fontsforweb_fontid_77695" id="btnSearch"
                     style={{
                         backgroundColor:'red', borderColor:'red', color:'white',
                         fontSize:'1.6rem', borderRadius:'8px', width:'400px'

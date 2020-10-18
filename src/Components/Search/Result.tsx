@@ -37,7 +37,7 @@ export const Resultados:any = (props:any) => {
                     </div>
                 
                     <div className="row"
-                        style={{display:'block', margin:'auto', paddingBottom:'34px'}}>
+                        style={{display:'block', margin:'auto', paddingBottom:'24px'}}>
 
                         <div className="card-header">
                             <p className="far fontsforweb_fontid_77695"
@@ -51,8 +51,8 @@ export const Resultados:any = (props:any) => {
                         </div>
 
                         <p className="fontsforweb_fontid_77695"
-                            style={{display:'block', margin:'auto', paddingTop:'26px', fontSize:'1rem'}}>
-                            ver en
+                            style={{display:'block', margin:'auto', paddingTop:'36px', fontSize:'1rem'}}>
+                            ver en {posts.postUrl}
 
                             <a href={posts.postUrl} target="_blank" rel="noopener noreferrer">
                                 <img src="/images/tw.png" alt="tw" className="tw"
@@ -75,7 +75,7 @@ export const Resultados:any = (props:any) => {
                     </div>
 
                     <hr style={{
-                        margin:'50px auto',
+                        margin:'40px auto',
                         width:'100%',
                         border:'1px solid #3b5998',
                         borderRadius:'5px'
