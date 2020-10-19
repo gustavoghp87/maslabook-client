@@ -76,9 +76,9 @@ export const Maslabook = () => {
     <>
         <Input setWords={setWords} enviar={enviar} />
 
-        <Row>
+        <Row style={{maxWidth:'95%', margin:'auto'}}>
 
-            <Col lg={6}>
+            <Col lg={6} style={{padding:'0'}}>
 
                 <SocialNet
                     socialNet={socialNet}
@@ -89,7 +89,7 @@ export const Maslabook = () => {
 
             </Col>
 
-            <Col lg={6}>
+            <Col lg={6} style={{padding:'0'}}>
 
                 <Date
                     a2009={a2009} setA2009={setA2009}

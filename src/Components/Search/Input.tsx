@@ -15,9 +15,10 @@ export const Input = (props:any) => {
 
     return (
     <>
-        <Row style={{marginBottom:'40px'}}>
+        <Row style={{margin:'0 auto 40px auto', maxWidth:'95%'}}>
 
-            <Col lg={6} style={{margin: mobile ? '0 auto 20px auto' : 'auto'}}>
+            <Col lg={6} style={{margin: mobile ? '0 auto 20px auto' : 'auto',
+                padding: mobile ? '0' : '0 10px 0 0'}}>
                 <div className="form-group" style={{maxWidth:'100%', margin:'auto'}}>
                     <input className="form-control" type="text" placeholder="Palabras"
                         style={{maxWidth:'300px', margin: mobile ? 'auto' : '0 0 0 auto'}}
@@ -26,7 +27,7 @@ export const Input = (props:any) => {
                 </div>
             </Col>
 
-            <Col lg={6}>
+            <Col lg={6} style={{padding: mobile ? '0' : '0 0 0 10px'}}>
 
                 <Button className="btn btn-success fontsforweb_fontid_77695" id="btnSearch"
                     style={{
