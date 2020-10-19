@@ -46,15 +46,18 @@ export const Resultados:any = (props:any) => {
                                     fontStyle:'normal', textAlign:'justify', textIndent:'2%'
                                 }}
                             >  
+                            
                                 {post.post}
+
                             </p>
                         </div>
 
                         <p className="fontsforweb_fontid_77695"
                             style={{display:'block', margin:'auto', paddingTop:'36px', fontSize:'1rem'}}>
-                            ver en {posts.postUrl}
 
-                            <a href={posts.postUrl} target="_blank" rel="noopener noreferrer">
+                            ver en
+
+                            <a href={post.postUrl} target="_blank" rel="noopener noreferrer">
                                 <img src="/images/tw.png" alt="tw" className="tw"
                                     style={{
                                         maxHeight:'37px',

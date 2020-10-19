@@ -52,6 +52,9 @@ export const Maslabook = () => {
         Axios(`${SERVER}/api/maslabook`)  
     }, [])
 
+    console.log(posts);
+    
+
 
     const enviar = async () => {
         if (!executeRecaptcha) return
