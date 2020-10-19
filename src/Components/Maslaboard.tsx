@@ -88,7 +88,7 @@ export const Maslaboard = () => {
                   
                   <div className="col-md-6">
                     <span style={{fontSize:'1rem', color:'gray', float:'right',
-                      marginBottom: mobile ? '12px' : '0'}}>
+                      marginBottom: mobile ? '12px' : '0', marginRight: mobile ? '0' : '10px'}}>
 
                       |&nbsp; {timer(board.timeBoard)}
 
@@ -98,8 +98,10 @@ export const Maslaboard = () => {
                 
                 <p className="far fontsforweb_fontid_77695 board"
                   style={{fontSize: '1.1rem', fontStyle: 'normal', textAlign: 'justify',
-                    paddingBottom:'8px', textIndent:'2%'}}>
+                    paddingBottom:'8px', textIndent:'2%', margin: mobile ? 'auto' : '5px 10px'}}>
+
                   {board.postBoard}
+
               </p>
               </div>
             </div>

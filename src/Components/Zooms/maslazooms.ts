@@ -12,9 +12,9 @@ type typeMaslazooms = typeMaslazoom[]
 export const maslazooms:typeMaslazooms = [
   {
     title: "MaslaZoom 31",
-    src: "https://www.youtube.com/embed/",
+    src: "https://www.youtube.com/embed/G19nuOCjnZk",
     h3: "",
-    h4: "string",
+    h4: "Perspectivas económicas y políticas para los próximos meses",
     far: [""]
   },
   {
