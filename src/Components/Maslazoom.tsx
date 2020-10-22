@@ -31,8 +31,8 @@ export const Maslazoom = () => {
                 <div className="card-header destacados">
                   <h3> {maslazoom.h3} </h3>
                   <h4> {maslazoom.h4} </h4>
-                  {maslazoom.far.map((far:string) => (
-                    <> <i className="far"> {far} </i> <br /> </>
+                  {maslazoom.far.map((far:string, index:number) => (
+                    <div key={index}> <i className="far"> {far} </i> <br /> </div>
                   ))}
                 </div>
               </div>

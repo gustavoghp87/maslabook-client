@@ -11,6 +11,19 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "Maslatón: Caos y Bitcoin",
+    src: "https://www.youtube.com/embed/Su-UCoOAYzk",
+    h3: "Temas destacados:",
+    h4: "",
+    far: [
+      "-Bitcoin y Ether",
+      "-Bank Charter Act de 1844",
+      "-Bancos como dependencias de los bancos centrales",
+      "-Billetes de papel y leyes antilavado",
+      "-Peso argentino inconvertible"
+    ]
+  },
+  {
     title: "MaslaZoom 31",
     src: "https://www.youtube.com/embed/G19nuOCjnZk",
     h3: "",
