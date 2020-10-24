@@ -37,7 +37,7 @@ export const Recomend = () => {
                         <li>feudal</li>
                     </div>
                     <div className="col-lg-3">
-                        <li>econometrista</li>
+                        <li>bitcoin</li>
                         <li>Finlandia</li>
                         <li>pingüino</li>
                     </div> 

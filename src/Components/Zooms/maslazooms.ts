@@ -1,9 +1,9 @@
 export type typeMaslazoom = {
-    title: string
-    src: string
-    h3: string
-    h4: string
-    far: string[]
+  title: string
+  src: string
+  h3: string
+  h4: string
+  far: string[]
 }
 
 type typeMaslazooms = typeMaslazoom[]
@@ -11,7 +11,7 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
-    title: "Maslatón: Caos y Bitcoin",
+    title: "MaslaZoom 32: Caos y Bitcoin",
     src: "https://www.youtube.com/embed/Su-UCoOAYzk",
     h3: "Temas destacados:",
     h4: "",
@@ -45,7 +45,7 @@ export const maslazooms:typeMaslazooms = [
     far: [""]
   },
   {
-    title: "Maslatón debate con Gómez Centurión",
+    title: "MaslaZoom 28 con Gómez Centurión",
     src: "https://www.youtube.com/embed/nuavY3LM_-Y",
     h3: "",
     h4: "Maslatón debate con Gómez Centurión",
@@ -195,17 +195,16 @@ export const maslazooms:typeMaslazooms = [
     h3: "Temas destacados:",
     h4: "",
     far: [
-      "(ver la hora en la barra de tareas del video)",
-      "-22:00 Estado del país, cuarentena, bear market",
-      "-22:06 Convertibilidad - intro",
-      "-22:08 Secesionismo (CABA, Mendoza), lavado de dinero, Travel Rule",
-      "-22:27 Convertibilidad I",
-      "-23:03 Habla Staling",
-      "-23:09 Sebastián Gutiérrez",
-      "-23:14 Convertibilidad II: corridas bancarias y cambiarias",
-      "-23:19 Bitcoin",
-      "-23:23 Luis Corbusier (Mendoza)",
-      "-23:29 Mercados norteamericanos"
+      "-Estado del país, cuarentena, bear market",
+      "-Convertibilidad - intro",
+      "-Secesionismo (CABA, Mendoza), lavado de dinero, Travel Rule",
+      "-Convertibilidad I",
+      "-Habla Staling",
+      "-Sebastián Gutiérrez",
+      "-Convertibilidad II: corridas bancarias y cambiarias",
+      "-Bitcoin",
+      "-Luis Corbusier (Mendoza)",
+      "-Mercados norteamericanos"
     ]
   },
   {
