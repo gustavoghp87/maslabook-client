@@ -11,6 +11,19 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "MaslaZoom 33",
+    src: "https://www.youtube.com/embed/b9T4zALCq3c",
+    h3: "Temas destacados:",
+    h4: "",
+    far: [
+      "-El peso rumbo a su destrucción",
+      "-Las 15,10 veces de subida logarítmica",
+      "-Intervenciones de foristas",
+      "-ADRs, CEDEARs, bancos",
+      "-31 kilos de jabón en polvo de stock"
+    ]
+  },
+  {
     title: "MaslaZoom 32: Caos y Bitcoin",
     src: "https://www.youtube.com/embed/Su-UCoOAYzk",
     h3: "Temas destacados:",
