@@ -37,11 +37,12 @@ export const Input = (props:any) => {
                     }}
                     onClick={()=>props.enviar()}
                 >
-                    buscar
+
+                    {props.searchBtn}
+
                 </Button>
 
             </Col>
-
 
         </Row>
     </>

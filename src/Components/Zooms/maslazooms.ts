@@ -11,20 +11,21 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
-    title: "MaslaZoom 33",
+    title: "MaslaZoom 34",
     src: "https://www.youtube.com/embed/b9T4zALCq3c",
     h3: "Temas destacados:",
     h4: "",
     far: [
       "-El peso rumbo a su destrucción",
       "-Las 15,10 veces de subida logarítmica",
+      "-La brecha con el oficial no importa",
       "-Intervenciones de foristas",
       "-ADRs, CEDEARs, bancos",
       "-31 kilos de jabón en polvo de stock"
     ]
   },
   {
-    title: "MaslaZoom 32: Caos y Bitcoin",
+    title: "MaslaZoom 33: Caos y Bitcoin",
     src: "https://www.youtube.com/embed/Su-UCoOAYzk",
     h3: "Temas destacados:",
     h4: "",
@@ -37,28 +38,28 @@ export const maslazooms:typeMaslazooms = [
     ]
   },
   {
-    title: "MaslaZoom 31",
+    title: "MaslaZoom 32",
     src: "https://www.youtube.com/embed/G19nuOCjnZk",
     h3: "",
     h4: "Perspectivas económicas y políticas para los próximos meses",
     far: [""]
   },
   {
-    title: "MaslaZoom 30 con el PD",
+    title: "MaslaZoom 31 con el PD",
     src: "https://www.youtube.com/embed/USmDSt9QoEU",
     h3: "",
     h4: "Análisis de la historia argentina",
     far: [""]
   },
   {
-    title: "MaslaZoom 29",
+    title: "MaslaZoom 30",
     src: "https://www.youtube.com/embed/H73bem3CU6k",
     h3: "",
     h4: "Análisis técnico del peso argentino de papel falsificado",
     far: [""]
   },
   {
-    title: "MaslaZoom 28 con Gómez Centurión",
+    title: "MaslaZoom 29 con Gómez Centurión",
     src: "https://www.youtube.com/embed/nuavY3LM_-Y",
     h3: "",
     h4: "Maslatón debate con Gómez Centurión",

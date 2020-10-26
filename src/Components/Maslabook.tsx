@@ -17,6 +17,7 @@ export const Maslabook = () => {
     type socialNet = 'both' | 'fb' | 'tw'
     const [socialNet, setSocialNet] = useState<socialNet>('both')
     const [third, setThird] = useState(true)
+    const [searchBtn, setSearchBtn] = useState('buscar')
 
     const [a2009, setA2009] = useState(true)
     const [a2010, setA2010] = useState(true)
@@ -51,13 +52,11 @@ export const Maslabook = () => {
     useEffect(() => {
         Axios(`${SERVER}/api/maslabook`)  
     }, [])
-
-    console.log(posts);
     
-
 
     const enviar = async () => {
         if (!executeRecaptcha) return
+        setSearchBtn('...buscando...')
         const result = await executeRecaptcha("")
         const pack = {
             words,
@@ -69,12 +68,13 @@ export const Maslabook = () => {
         const axios = await Axios.post(`${SERVER}/api/maslabook`, pack)
         const data = await axios.data
         setPosts({posts:data.posts})
+        setSearchBtn('buscar nuevo')
     }
 
 
     return (
     <>
-        <Input setWords={setWords} enviar={enviar} />
+        <Input setWords={setWords} enviar={enviar} searchBtn={searchBtn} />
 
         <Row style={{maxWidth:'95%', margin:'auto'}}>
 
