@@ -15,15 +15,11 @@ export const mobile = window.screen.width<990 ? true : false
 
 function App() {
 
-  const appCss = {
-    maxWidth: '100%'
-  }
-
   return (
     <Suspense fallback={(<div>Cargando...</div>)}>
       <NavBar />
       <Header />
-      <div style={appCss}>
+      <div style={{maxWidth:'100%'}}>
         <GoogleReCaptchaProvider reCaptchaKey="6LeTu9gZAAAAAG9tepxJKY0gh5IjNC4rfeK8rBRK">
           <Switch>
             <Redirect exact path='/' to="/maslabook" />

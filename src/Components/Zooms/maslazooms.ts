@@ -11,6 +11,21 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "MASLATON formando Ideas: Política Barrani",
+    src: "https://www.youtube.com/embed/h2EIoo4I328",
+    h3: "Temas destacados:",
+    h4: "",
+    far: [
+      "-Milei",
+      "-Grabois, tierras, Fernández y vice",
+      "-Massa",
+      "-Trump",
+      "-El peso",
+      "-Boris Johnson, Bolsonaro, la importancia de no tener miedo, Thatcher, COVID",
+      "-Carrió, Larreta, López Murphy, Guillermo Moreno, Espert"
+    ]
+  },
+  {
     title: "MaslaZoom 34",
     src: "https://www.youtube.com/embed/b9T4zALCq3c",
     h3: "Temas destacados:",
