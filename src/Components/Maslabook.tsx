@@ -50,7 +50,7 @@ export const Maslabook = () => {
     const { executeRecaptcha } = useGoogleReCaptcha()
 
     useEffect(() => {
-        Axios(`${SERVER}/api/maslabook`)  
+        Axios(`${SERVER}/api/maslabook`)
     }, [])
     
 

@@ -11,6 +11,13 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "MASLATON: Elecciones en USA",
+    src: "https://www.youtube.com/embed/mGh6KBbSwpM",
+    h3: "",
+    h4: "Análisis de las elecciones en EE.UU. y la política exterior en estos últimos 4 años",
+    far: []
+  },
+  {
     title: "MASLATON formando Ideas: Política Barrani",
     src: "https://www.youtube.com/embed/h2EIoo4I328",
     h3: "Temas destacados:",

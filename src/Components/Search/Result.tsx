@@ -1,4 +1,5 @@
 import React from 'react'
+import { mobile } from '../../App'
 
 
 export const Resultados:any = (props:any) => {
@@ -20,7 +21,7 @@ export const Resultados:any = (props:any) => {
             {posts && posts.posts && !!posts.posts.length &&
                 posts.posts.map((post:any) => (
 
-                <div className="col" key={post.innerId}>
+                <div className="col" key={post.innerId} style={{padding: mobile ? '0' : ''}}>
 
                     <div className="row" style={{display:'block', margin:'auto'}}>
                         <p className="fontsforweb_fontid_77695"
@@ -42,8 +43,9 @@ export const Resultados:any = (props:any) => {
                         <div className="card-header">
                             <p className="far fontsforweb_fontid_77695"
                                 style={{
-                                    marginLeft:'4%', marginRight:'4%', fontSize:'1.2rem',
-                                    fontStyle:'normal', textAlign:'justify', textIndent:'2%'
+                                    margin: mobile ? '0' : '0 4%', fontStyle:'normal',
+                                    fontSize: mobile ? '1.1rem' : '1.2rem',
+                                    textAlign:'justify', textIndent:'2%', wordWrap:'break-word'
                                 }}
                             >  
                             
@@ -85,7 +87,8 @@ export const Resultados:any = (props:any) => {
                     }} />
 
                 </div>
-            ))}
+                )
+            )}
         </div>
     </>
     )
