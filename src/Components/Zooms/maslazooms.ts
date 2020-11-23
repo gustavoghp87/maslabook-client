@@ -11,6 +11,13 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "Las turbias elecciones de EE.UU.",
+    src: "https://www.youtube.com/embed/lwEuU_A3SOY",
+    h3: "",
+    h4: "Análisis paso a paso de Virginia Tuckey sobre las evidencias de fraude en las elecciones de EE.UU. y perspectivas",
+    far: []
+  },
+  {
     title: "MASLATON: Elecciones en USA",
     src: "https://www.youtube.com/embed/mGh6KBbSwpM",
     h3: "",
