@@ -11,6 +11,20 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "EN UNION Y LIBERTAD: Lazzari y Maslatón, sobre las elecciones 2021-2023",
+    src: "https://www.youtube.com/embed/mFTLYLAOV8w",
+    h3: "",
+    h4: "Encuentro organizado por el Partido Demócrata Nacional, dialogando con Gustavo Lazzari y Carlos Maslatón sobre economía y política.",
+    far: []
+  },
+  {
+    title: "Maslatón: Por qué el liberalismo argentino no debe aliarse con el macriísmo",
+    src: "https://www.youtube.com/embed/QJVejQSWuLQ",
+    h3: "",
+    h4: "Entrevista realizada por el periodista Julio Nieto de la comunidad de Villa María, Provincia de Córdoba.",
+    far: []
+  },
+  {
     title: "Las turbias elecciones de EE.UU.",
     src: "https://www.youtube.com/embed/lwEuU_A3SOY",
     h3: "",
