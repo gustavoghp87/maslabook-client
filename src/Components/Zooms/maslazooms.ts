@@ -11,6 +11,13 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "MASLATON: con Carlos Maslaton y Manuel Adorni",
+    src: "https://www.youtube.com/embed/ck3UdlP1NQ0",
+    h3: "",
+    h4: "Carlos Maslaton y Manuel Adorni mano a mano, en ocasión del aniversario del Centro de Estudios Economicos XXI.Moderadora: Eliana Scialabba.",
+    far: []
+  },
+  {
     title: "EN UNION Y LIBERTAD: Lazzari y Maslatón, sobre las elecciones 2021-2023",
     src: "https://www.youtube.com/embed/mFTLYLAOV8w",
     h3: "",
