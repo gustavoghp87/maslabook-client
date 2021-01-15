@@ -11,6 +11,13 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "MASLATON: La actualidad de Bitcoin y lo que se viene",
+    src: "https://www.youtube.com/embed/ck3UdlP1NQ0",
+    h3: "",
+    h4: "Espectacular análisis de las ondas desplegadas desde marzo y predicción de precios. También Ether.",
+    far: []
+  },
+  {
     title: "MASLATON: con Carlos Maslaton y Manuel Adorni",
     src: "https://www.youtube.com/embed/ck3UdlP1NQ0",
     h3: "",
