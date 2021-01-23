@@ -11,6 +11,13 @@ type typeMaslazooms = typeMaslazoom[]
 
 export const maslazooms:typeMaslazooms = [
   {
+    title: "Carlos Maslatón dialoga con Domingo Felipe Cavallo",
+    src: "https://www.youtube.com/embed/rpBUfOboBdA",
+    h3: "",
+    h4: "A 30 años de su nombramiento como Ministro de Economía de la Argentina por el Presidente Carlos Menem, hablo con Cavallo sobre aquellos grandes momentos, sobre las dificultades políticas de 1990, la convertibilidad, las corridas bancarias, los hechos del 2001. Y como plus especial: Bitcoin y Tether. El Zoom tuvo lugar a puertas cerradas, sin público, el viernes 22/1/2021 a las 1800 hora argentina.",
+    far: []
+  },
+  {
     title: "MASLATON: La actualidad de Bitcoin y lo que se viene",
     src: "https://www.youtube.com/embed/ck3UdlP1NQ0",
     h3: "",
