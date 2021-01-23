@@ -1,6 +1,7 @@
 {
   "short_name": "Maslabook",
   "name": "Maslabook Web App",
+  "description": "Me preparé toda la vida para este momento",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,10 +17,27 @@
       "src": "favicon.ico",
       "type": "image/x-icon",
       "sizes": "512x512"
+    },
+    {
+			"src": "logo2.png",
+			"type": "image/png",
+      "sizes": "144x144",
+      "purpose": "maskable any"
+		},
+    {
+      "src": "logo2.png",
+      "sizes": "512x512 144x144",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "512x512 144x144",
+      "type": "image/x-icon",
+      "purpose": "maskable any"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#000000"
+  "background_color": "#ffffff"
 }
