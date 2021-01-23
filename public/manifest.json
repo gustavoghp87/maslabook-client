@@ -31,6 +31,12 @@
     },
     {
       "src": "logo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable monochrome"
+    },
+    {
+      "src": "logo2.png",
       "sizes": "512x512 144x144",
       "type": "image/x-icon",
       "purpose": "maskable any"
