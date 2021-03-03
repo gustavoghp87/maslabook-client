@@ -23,15 +23,10 @@ function App() {
         <GoogleReCaptchaProvider reCaptchaKey="6LeTu9gZAAAAAG9tepxJKY0gh5IjNC4rfeK8rBRK">
           <Switch>
             <Redirect exact from='/' to="/maslabook" />
-            
             <Route exact path='/maslabook' component={Maslabook} />
-
             <Route exact path='/maslastory' component={Maslastory} />
-
             <Route exact path='/maslaboard' component={Maslaboard} />
-
             <Route exact path='/maslazoom' component={Maslazoom} />
-            
             <Route path='/' component={Maslabook} />
           </Switch>
         </GoogleReCaptchaProvider>
