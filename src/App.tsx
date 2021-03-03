@@ -13,6 +13,8 @@ import './css/App.css'
 
 export const mobile = window.screen.width<990 ? true : false
 
+// quito     "build": "workbox generateSW && react-scripts build",
+
 function App() {
 
   return (
