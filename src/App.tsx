@@ -22,7 +22,7 @@ function App() {
       <div style={{maxWidth:'100%'}}>
         <GoogleReCaptchaProvider reCaptchaKey="6LeTu9gZAAAAAG9tepxJKY0gh5IjNC4rfeK8rBRK">
           <Switch>
-            <Redirect exact path='/' to="/maslabook" />
+            <Redirect exact from='/' to="/maslabook" />
             
             <Route exact path='/maslabook' component={Maslabook} />
 
