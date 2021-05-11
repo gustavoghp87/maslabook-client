@@ -37,7 +37,7 @@ export const NavBar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
         
                 <Nav className="mr-auto">
-                    <Link style={elem2} to="/maslastory"> maslastory </Link>
+                    {/* <Link style={elem2} to="/maslastory"> maslastory </Link> */}
                     <Link style={elem2} to="/maslaboard"> maslaboard </Link>
                     <Link style={elem2} to="/maslazoom"> maslazoom </Link>
                 </Nav>
