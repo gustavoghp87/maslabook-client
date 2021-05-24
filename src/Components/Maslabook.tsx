@@ -74,6 +74,8 @@ export const Maslabook = () => {
 
     return (
     <>
+        <h6 className="fontsforweb_fontid_77695 text-center mb-5 "> Buscador de publicaciones maslatonianas </h6>
+
         <Input setWords={setWords} enviar={enviar} searchBtn={searchBtn} />
 
         <Row style={{maxWidth:'95%', margin:'auto'}}>
